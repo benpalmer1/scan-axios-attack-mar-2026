@@ -24,7 +24,7 @@ Additional validation performed while reviewing these scripts:
 
 The maintained scanners are:
 
-- `scan-axios-attack.sh` for macOS/Linux (Bash; compatible with zsh)
+- `scan-axios-attack.sh` for macOS/Linux (Bash; built to be compatible with zsh)
 - `scan-axios-attack.ps1` for Windows PowerShell 5.1+
 
 In a deeply unfunny bit of symmetry, the checks are cross-platform too.
@@ -58,7 +58,6 @@ They currently check for:
 - The default search roots are broad (`/` on Unix-like systems and the system drive on Windows), so large scans can take time.
 - Some checks are heuristic by design, especially the artifact and persistence sweeps.
 - A clean result should not be treated as a guarantee that no malicious postinstall behavior executed in the past.
-- `older version/scan-windows.ps1` is kept as a legacy reference only; prefer `scan-axios-attack.ps1`.
 
 ## Recommended usage
 
